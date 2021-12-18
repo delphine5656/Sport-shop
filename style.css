@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Readex+Pro&family=Work+Sans&display=swap');
+
 *, ::before, ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*Import fonts*/
+
+body {
+    font-family: 'Playball', cursive;
+    font-family: 'Readex Pro', sans-serif;
 }
 .menu{
     background-color: #005e5e;
@@ -19,7 +28,15 @@
     margin: 1%;
 }
 
+/*Création d'une div pour le logo et la navbar*/
 
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    font-size: 2rem;
+}
 
 .navbar li {
     list-style: none;
@@ -58,14 +75,21 @@ ul{
     .navbar{
         display: none;
     }
-    .navbar.active{
-     display: flex;   
+    .navbar.active {
+        display: block;   
     }
+    
     .btnClose {
         display: block;
     }
-    .navbar.active ul{
-        display: flex;  
-        flex-direction: column;
+    .navbar.active > ul{
+        display: block;
+        
     }
+    .brand {
+    display: block;
+    width: 65%;
+    font-size: 2rem;
+}
+    
 }
