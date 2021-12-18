@@ -1,0 +1,71 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    background-color: #005e5e;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin: 1%;
+}
+
+
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px;
+}
+
+.btnClose {
+    display: none;
+    color: aliceblue;
+    padding-right: 1%;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+}
+
+.navPanier{
+    display: flex;
+    margin-right: 1%;
+    color: aliceblue;
+
+}
+
+.navPanier .fas {
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 810px) {
+    .navbar{
+        display: none;
+    }
+    .navbar.active{
+     display: flex;   
+    }
+    .btnClose {
+        display: block;
+    }
+    .navbar.active ul{
+        display: flex;  
+        flex-direction: column;
+    }
+}
